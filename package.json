@@ -19,7 +19,19 @@
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
   },
+
+  
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/support/step_definitions/**/*.js"
+
+    "_comment_1": "This is used to connect the js files contains cypress test",
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+
+      "_comment_2": "This is used to generate report after test completions",
+      "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber_html/Cucumber-report.html"
+    }
   }
+
+
 }
