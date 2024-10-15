@@ -18,20 +18,22 @@ CYPRESS-AUTOMATION-FRAMEWORK/
 ├── cypress/
 │   ├── downloads/
 │   ├── e2e/
-│   │   └── Contact_Us.feature         # Cucumber feature file
+│   │   ├── Contact_Us.feature         # Cucumber feature file for Contact Us
+│   │   └── Login.feature               # Cucumber feature file for Login
 │   ├── fixtures/
 │   ├── support/
 │   │   ├── step_definitions/
-│   │   │   ├── ContactUS_Steps.js     # Step definitions for "Contact Us" feature
-│   │   │   └── Homepage_Steps.js
+│   │   │   ├── ContactUS_Steps.js      # Step definitions for "Contact Us" feature
+│   │   │   ├── Login_Steps.js          # Step definitions for "Login" feature
+│   │   │   └── Homepage_Steps.js       # Step definitions for homepage interactions
 │   │   ├── commands.js
 │   │   └── e2e.js
 ├── node_modules/
 ├── .gitignore
-├── cypress.config.ts                  # Cypress configuration file
-├── package.json                       # NPM dependencies and scripts
+├── cypress.config.ts                   # Cypress configuration file
+├── package.json                        # NPM dependencies and scripts
 ├── package-lock.json
-└── README.md                          # Project documentation
+└── README.md                           # Project documentation
 ```
 
 ## Installation
@@ -64,6 +66,20 @@ or
 npx cypress run
 ```
 
+or for test by specific tags
+
+```bash
+npx cypress run --env TAGS='@smoke' --headed'
+```
+
+```bash
+npx cypress run --env TAGS='@regression' --headed
+```
+
+```bash
+npx cypress run --env TAGS='@login' --headed
+```
+
 ## Feature Scenarios
 
 **1. Valid Contact Us Form Submission**
@@ -77,6 +93,14 @@ Expected Outcome: Displays an error message.
 **3. Valid Contact Us Form Submission with Specific Data**
 Description: Submits the contact form with predefined values for each field.
 Expected Outcome: Displays a success message.
+
+**4. Valid Contact Us Page**
+Description: Submits the contact form with various combinations of first name, last name, email address, and comments to verify the correct response message is displayed.
+Expected Outcome: Displays a success message or an error message based on the validity of the email address.
+
+**5. Validate Login Credentials**  
+Description: Tests the login functionality by submitting various combinations of usernames and passwords to verify that the correct alert message is displayed for valid and invalid credentials.
+Expected Outcome: Displays an alert box indicating whether the login attempt succeeded or failed.
 
 ## License
 
