@@ -1,6 +1,6 @@
 const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-//Scenario: Valid contact us form submission
+//Scenario: Valid contact us form submission, working with cucumber commands
 When ('I type a first name',()=>{
     cy.get('[name="first_name"]').type("Ariful");
 });
