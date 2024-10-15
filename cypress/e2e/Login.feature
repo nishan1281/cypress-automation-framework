@@ -1,3 +1,6 @@
+@login @regression
+## tags used to run specific target tests
+
 Feature: webdriveruniversity - Login Page
 
     Background: Pre conditions

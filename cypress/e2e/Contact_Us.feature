@@ -1,3 +1,6 @@
+@contact-us @regression
+## tags used to run specific target tests
+
 Feature: WebDriverUniversity - Contact Us Page
 
     ## The Background keyword ensures that the below defined steps execute before each Scenario,
@@ -16,7 +19,7 @@ Feature: WebDriverUniversity - Contact Us Page
         And i click on the submit button
         Then  I should be presented with a successful contact us submission message
 
-
+    @smoke
     Scenario: Invalid contact us form submission
         # Given I naviagate to the WebDriverUniversity home page
         # When i click on the contact us button
@@ -25,7 +28,7 @@ Feature: WebDriverUniversity - Contact Us Page
         And i enter message
         And i click on the submit button
         Then  I should be presented with a unsuccessful contact us submission message
-
+    
     Scenario: Valid contact us form submission- using specific data
         # Given I naviagate to the WebDriverUniversity home page
         # When i click on the contact us button
@@ -39,6 +42,7 @@ Feature: WebDriverUniversity - Contact Us Page
 # Use Scenario Outline to validate the "Contact Us" page with multiple data fields,
 # utilizing Cucumber expressions to handle varied test data inputs efficiently and avoid code duplication.
 
+    
     Scenario Outline: Validate contact us page
         # Given I naviagate to the WebDriverUniversity home page
         # When i click on the contact us button
