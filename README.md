@@ -4,11 +4,12 @@ This project is an automation framework using Cypress and Cucumber for testing t
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
-- [Installation](#Installation)
-- [Feature Scenarios](#feature-scenarios)
-- [Scripts](#scripts)
-- [License](#license)
+- [Cypress Automation Framework with Cucumber](#cypress-automation-framework-with-cucumber)
+  - [Table of Contents](#table-of-contents)
+  - [Project Structure](#project-structure)
+  - [Installation](#installation)
+  - [Feature Scenarios](#feature-scenarios)
+  - [License](#license)
 
 ## Project Structure
 
@@ -74,7 +75,7 @@ Expected Outcome: Displays a success message.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
-This README provides a clean overview of the project, including the project structure, setup instructions, usage information, feature scenarios, scripts, and contribution guidelines. Adjust the commands or links as needed for your specific project setup.
+This README provides a clean overview of the project, including the project structure, setup instructions, usage information, feature scenarios, scripts, and contribution guidelines. 
 
 
 
