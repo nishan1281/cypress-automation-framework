@@ -35,21 +35,29 @@ CYPRESS-AUTOMATION-FRAMEWORK/
 ```
 
 ## Installation
+
 Instructions on how to install the project-
 
 **1. Clone the repository:**
+
 ```bash
 git clone https://github.com/yourusername/cypress-automation-framework.git
 cd cypress-automation-framework
 ```
+
 **2. Install dependencies:**
+
 ```bash
 npm install
 ```
+
 **3.Run Cypress for the first time (to initialize the framework):**
+
 ```bash
 npx cypress open
+
 ```
+
 or
 
 ```bash
@@ -70,17 +78,9 @@ Expected Outcome: Displays an error message.
 Description: Submits the contact form with predefined values for each field.
 Expected Outcome: Displays a success message.
 
-
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
-This README provides a clean overview of the project, including the project structure, setup instructions, usage information, feature scenarios, scripts, and contribution guidelines. 
-
-
-
-
-
-
-
-
+This README provides a clean overview of the project, including the project structure, setup instructions, usage information, feature scenarios, scripts, and contribution guidelines.
