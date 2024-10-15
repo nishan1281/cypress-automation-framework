@@ -52,7 +52,7 @@ When('i type a specific word {string} and number {int} within the comment input 
 
 //Scenario Outline: Validate contact us page with multiple data fields
 
-When('I type a first name {word} and a last name {string}',(firstName, LastName)=>{
+When('I type a first name {word} and a last name {string}',(firstName, LastName)=>{ //{word} for single word and {string} for multiple words
     cy.get('[name="first_name"]').type(firstName);
     cy.get('[name="last_name"]').type(LastName);
 });

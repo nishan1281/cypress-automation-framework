@@ -6,5 +6,10 @@ cy.visit(URL);
 });
 
 When ('i click on the contact us button', () => {
-    cy.get("#contact-us").invoke("removeAttr","target").click();
+    cy.get("#contact-us").invoke("removeAttr","target").click(); 
+    //invoke("removeAttr", "target") used remove target attribute cause cypress might not handle multiple pages
 });
+
+When ('I click on the login portal button', () => {
+    cy.get("#login-portal").invoke("removeAttr","target").click();
+ });
