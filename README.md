@@ -9,6 +9,7 @@ This project is an automation framework using Cypress and Cucumber for testing t
   - [Project Structure](#project-structure)
   - [Installation](#installation)
   - [Feature Scenarios](#feature-scenarios)
+  - [Checking the Test and reports](#checking-the-test-and-reports)
   - [License](#license)
 
 ## Project Structure
@@ -60,26 +61,6 @@ npx cypress open
 
 ```
 
-or
-
-```bash
-npx cypress run
-```
-
-or for test by specific tags
-
-```bash
-npx cypress run --env TAGS='@smoke' --headed'
-```
-
-```bash
-npx cypress run --env TAGS='@regression' --headed
-```
-
-```bash
-npx cypress run --env TAGS='@login' --headed
-```
-
 ## Feature Scenarios
 
 **1. Valid Contact Us Form Submission**
@@ -101,6 +82,28 @@ Expected Outcome: Displays a success message or an error message based on the va
 **5. Validate Login Credentials**  
 Description: Tests the login functionality by submitting various combinations of usernames and passwords to verify that the correct alert message is displayed for valid and invalid credentials.
 Expected Outcome: Displays an alert box indicating whether the login attempt succeeded or failed.
+
+## Checking the Test and reports
+
+```bash
+npx cypress run
+```
+
+or for test by specific tags
+
+```bash
+npx cypress run --env TAGS='@smoke' --headed'
+```
+
+```bash
+npx cypress run --env TAGS='@regression' --headed
+```
+
+```bash
+npx cypress run --env TAGS='@login' --headed
+```
+
+Check the test report in cypress\reports
 
 ## License
 
